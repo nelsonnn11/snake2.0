@@ -57,7 +57,7 @@ const initGame = () => {
     // Updating the snake's head position based on the current velocity
     snakeX += velocityX;
     snakeY += velocityY;
-    
+
     // Shifting forward the values of the elements in the snake body by one
     for (let i = snakeBody.length - 1; i > 0; i--) {
         snakeBody[i] = snakeBody[i - 1];
@@ -79,4 +79,4 @@ const initGame = () => {
 }
 updateFoodPosition();
 setIntervalId = setInterval(initGame, 100);
-document.addEventListener("keyup", changeDirection);
+document.addEventListener("keyup", changeDirection)
