@@ -66,8 +66,6 @@ const initGame = () => {
     // Checking if the snake's head is out of wall, if so setting gameOver to true
     if(snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
         return gameOver = true;
-        var audio = new Audio ("audio/fail.mp3")
-        audio.play();
     }
     for (let i = 0; i < snakeBody.length; i++) {
         // Adding a div for each part of the snake's body
